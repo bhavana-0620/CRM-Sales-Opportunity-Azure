@@ -1,0 +1,36 @@
+{
+	"name": "productssource",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "products.csv",
+				"fileSystem": "bronze"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "product",
+				"type": "String"
+			},
+			{
+				"name": "series",
+				"type": "String"
+			},
+			{
+				"name": "sales_price",
+				"type": "String"
+			}
+		]
+	}
+}

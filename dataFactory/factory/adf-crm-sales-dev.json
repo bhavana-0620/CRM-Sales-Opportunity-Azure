@@ -1,0 +1,9 @@
+{
+	"name": "adf-crm-sales-dev",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "REDACTED",
+		"tenantId": "REDACTED"
+	}
+}
